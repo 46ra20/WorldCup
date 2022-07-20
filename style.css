@@ -1,0 +1,309 @@
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Body and main section */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Section */
+header{
+    width: 95%;
+    margin: 50px auto;
+    background-color: #161616;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+.headerDescription{
+    width: 50%;
+    padding-left: 106px;
+}
+.headerDescription h1{
+    font-size: 6.5vw;
+    color: white;
+    line-height: 6vw;
+}
+.headerDescription p{
+    color: white;
+}
+.webLink{
+    margin: 20px 0;
+}
+.webLink a{
+    padding: 5px 15px;
+    text-decoration: none;
+    background-color: #DD0000;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 12px;
+}
+.headerImage{
+    width: 50%;
+}
+.headerImage img{
+    width: 95%;
+    height: 100vh;
+    padding-top: 35px;
+}
+
+/* End Header Section */
+
+.blogs{
+    width: 95%;
+    margin: 50px auto;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 312px auto;
+    grid-gap: 24px;
+}
+
+/* -----------Menu bar-------------  */
+.blogs aside ul{
+    display: inline-block;
+    background-color: #161616;
+    width: 312px;
+    height: 312px;
+    border-radius: 10px;
+}
+.blogs aside ul li{
+    background-color: white;
+    list-style: none;
+    margin: 30px;
+    height: 65px;
+    border-radius: 10px;
+}
+.blogs aside ul li a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blogs aside ul li a:hover{
+    border-radius: 10px;
+    background-color: #DD0000;
+    color: white;
+}
+/* Menu bar end */
+/* --------Blogs------- */
+.blog{
+    border: 1px solid lightgray;
+    border-radius: 12px;
+}
+.blog img{
+    width: 100%;
+}
+.blogDescription button{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 20px 20px 0 20px;
+}
+.blogDescription p{
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* All Blog*/
+.allBlogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+}
+/* All blog end */
+/* Special Button */
+.specialButton{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+}
+/* special button */
+.specialButton a{
+    display: none;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    background-color: #161616;
+    height: 444px;
+   
+}
+.footerElement{
+    position: relative;
+    top:35%
+}
+.footerElement h2{
+    font-weight: 600;
+    font-size: 42px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+}
+.footerElement hr{
+    width: 80%;
+    margin: 0 auto;
+    height: 1px;
+    border: none;
+    background-image: linear-gradient(90deg ,black,white,black);
+}
+.footerElement ul{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.footerElement ul li{
+    display: inline-block;
+    padding: 10px 15px;
+}
+.footerElement ul li a{
+    text-align: center;
+
+    text-decoration: none;
+    color: white;
+}
+#socialMedia{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Up Coming Match */
+.upComingMatch{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+.upComingMatchImage{
+    display: flex;
+    align-items: center;
+}
+.upComingMatchImage img{
+    padding: 53px 22px;
+    width: 94px;
+    height: 57px;
+}
+.upComingMatchImage p{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.matchDescription h2{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.matchDescription p{
+    text-align: center;
+    color:#4D4D4D;
+}
+/*End Up Coming Match */
+
+/* Tablate Mode */
+@media screen and (min-width: 768px) and (max-width:1023px){
+    .headerImage img{
+        height: 40vh;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns:repeat(1,1fr) ;
+    }
+    .blogs aside ul{
+        display: flex;
+        justify-content: space-around;
+        height: auto;
+        width: 100%;
+    }
+    .blogs aside ul li a{
+        width: 200px;
+        padding: 0;
+    }
+    .allBlogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .specialButton a {
+        display: block;
+    }
+    .footerElement ul{
+        width: 100%;
+    }
+}
+/* Tablet Mode End */
+
+/*----------- 
+        Mobaile Mode
+--------------------------- */
+@media screen and (max-width:767px) {
+    /* mobile header section */
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .headerDescription{
+        width: 90%;
+        padding: 10px;
+    }
+    .headerImage img {
+        height: 30vh;
+        width: 100%;
+    }
+    /* Mobaile Blog Section */
+    .allBlogs{
+        display: block;
+    }
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 10px 0px;
+    }
+
+    .blogs aside ul {
+        display: block;
+        justify-content: space-around;
+        width: 100%;
+        padding: 20px 0 20px 0;
+    }
+
+    .blogs aside ul li{
+        display: block;
+    }
+
+    .allBlogs {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footerElement {
+    position: relative;
+    top: 0;
+    }
+
+    /* Up Coming Match */
+    .upComingMatchImage img {
+        padding: 20px 14px;
+        width: 94px;
+        height: 57px;
+    }
+    .footerElement ul {
+        display: block;
+    }
+    .footerElement ul li{
+        display: block;
+    }
+    .footerElement ul li a{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
