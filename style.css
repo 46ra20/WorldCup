@@ -231,7 +231,6 @@ footer{
         justify-content: space-around;
         height: auto;
         width: 100%;
-        background-color: white;
     }
     
     .blogs aside ul li a{
@@ -268,7 +267,6 @@ footer{
     }
     /*menu bar*/
     .blogs aside ul{
-        background-color: white;
         width: 100%;
     }
     .blogs aside ul li{
