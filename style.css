@@ -191,7 +191,7 @@ footer{
     align-items: center;
 }
 .upComingMatchImage img{
-    padding: 53px 22px;
+    margin: 20px auto;
     width: 35%;
     height: 30%;
 }
@@ -226,6 +226,7 @@ footer{
         height: auto;
         width: 100%;
     }
+    
     .blogs aside ul li a{
         width: 200px;
         padding: 0;
@@ -263,7 +264,8 @@ footer{
 
         width: 100%;
     }
-    .blogs aside li{
+    .blogs aside ul li{
+        margin: 30px auto;
         width: 88%;
     }
     .blogs{
