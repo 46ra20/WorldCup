@@ -210,6 +210,12 @@ footer{
     color:#4D4D4D;
 }
 /*End Up Coming Match */
+/* Special Effect */
+#active {
+    background-color: #DD0000;
+    color: white;
+    border-radius: 10px;
+}
 
 /* Tablate Mode */
 @media screen and (min-width: 768px) and (max-width:1023px){
@@ -225,6 +231,10 @@ footer{
         justify-content: space-around;
         height: auto;
         width: 100%;
+        background-color: white;
+    }
+    .blogs aside ul li{
+        border: 1px solid gray;
     }
     
     .blogs aside ul li a{
@@ -261,10 +271,11 @@ footer{
     }
     /*menu bar*/
     .blogs aside ul{
-
+        background-color: white;
         width: 100%;
     }
     .blogs aside ul li{
+        border: 1px solid gray;
         margin: 30px auto;
         width: 88%;
     }
