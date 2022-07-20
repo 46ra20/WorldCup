@@ -79,16 +79,16 @@ header{
     border-radius: 10px;
 }
 .blogs aside ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    display: block;
     width: 100%;
     height: 100%;
     font-size: 20px;
     font-weight: 500;
     color: #161616;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 .blogs aside ul li a:hover{
     border-radius: 10px;
@@ -99,7 +99,7 @@ header{
 /* --------Blogs------- */
 .blog{
     border: 1px solid lightgray;
-    border-radius: 12px;
+    border-radius: 20px;
 }
 .blog img{
     width: 100%;
@@ -192,8 +192,8 @@ footer{
 }
 .upComingMatchImage img{
     padding: 53px 22px;
-    width: 94px;
-    height: 57px;
+    width: 35%;
+    height: 30%;
 }
 .upComingMatchImage p{
     font-size: 16px;
@@ -214,7 +214,7 @@ footer{
 /* Tablate Mode */
 @media screen and (min-width: 768px) and (max-width:1023px){
     .headerImage img{
-        height: 40vh;
+        height: 55vh;
     }
     .blogs{
         display: grid;
@@ -246,64 +246,44 @@ footer{
         Mobaile Mode
 --------------------------- */
 @media screen and (max-width:767px) {
-    /* mobile header section */
     header{
-        display: flex;
         flex-direction: column;
-    }
-    .headerDescription{
-        width: 90%;
-        padding: 10px;
+        align-items: center;
     }
     .headerImage img {
-        height: 30vh;
+        height: 40vh;
+    }
+    .headerDescription{
+        text-align: center;
+        padding: 0;
+        padding: 20px;
+    }
+    /*menu bar*/
+    .blogs aside ul{
+
         width: 100%;
     }
-    /* Mobaile Blog Section */
+    .blogs aside li{
+        width: 88%;
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
     .allBlogs{
         display: block;
     }
-    .blogs {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin: 10px 0px;
+    .blog,.upComingMatch{
+        margin: 10px 0;
     }
-
-    .blogs aside ul {
-        display: block;
-        justify-content: space-around;
-        width: 100%;
-        padding: 20px 0 20px 0;
+    /* Footer Menu */
+    .footerElement{
+        top: 0;
     }
-
-    .blogs aside ul li{
-        display: block;
-    }
-
-    .allBlogs {
-        width: 100%;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .footerElement {
-    position: relative;
-    top: 0;
-    }
-
-    /* Up Coming Match */
-    .upComingMatchImage img {
-        padding: 20px 14px;
-        width: 94px;
-        height: 57px;
-    }
-    .footerElement ul {
+    .footerElement ul{
         display: block;
     }
     .footerElement ul li{
         display: block;
-    }
-    .footerElement ul li a{
-        display: block;
-        width: 100%;
         text-align: center;
     }
 }
