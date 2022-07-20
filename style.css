@@ -233,9 +233,6 @@ footer{
         width: 100%;
         background-color: white;
     }
-    .blogs aside ul li{
-        border: 1px solid gray;
-    }
     
     .blogs aside ul li a{
         width: 200px;
@@ -275,7 +272,6 @@ footer{
         width: 100%;
     }
     .blogs aside ul li{
-        border: 1px solid gray;
         margin: 30px auto;
         width: 88%;
     }
