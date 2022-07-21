@@ -43,16 +43,17 @@ header{
     font-weight: 500;
     border-radius: 12px;
 }
-.fa-solid{
-    transition: transform 4s;
 
 /*-------
 transition Effect in button 
 --------------------------*/
-
-.webLink a:hover .fa-solid{
+.fa-solid{
+    transition: transform 3s;
+}
+.webLink a:hover .fa-solid {
     transform: rotate(-180deg);
 }
+
 /* Web Link End*/
 
 .headerImage{
