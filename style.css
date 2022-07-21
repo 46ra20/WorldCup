@@ -43,6 +43,18 @@ header{
     font-weight: 500;
     border-radius: 12px;
 }
+.fa-solid{
+    transition: transform 4s;
+
+/*-------
+transition Effect in button 
+--------------------------*/
+
+.webLink a:hover .fa-solid{
+    transform: rotate(-180deg);
+}
+/* Web Link End*/
+
 .headerImage{
     width: 50%;
 }
@@ -95,6 +107,7 @@ header{
     background-color: #DD0000;
     color: white;
 }
+
 /* Menu bar end */
 /* --------Blogs------- */
 .blog{
